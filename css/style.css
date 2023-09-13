@@ -1,63 +1,300 @@
+@font-face {
+  font-family: 'Muller';
+  src: local('../fonts/MullerRegular'),
+    url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('../fonts/MullerMedium'),
+    url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('../fonts/MullerLight'),
+    url('../fonts/MullerLight.woff2') format('woff2'),
+    url('../fonts/MullerLight.woff') format('woff');
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('../fonts/MullerBold'),
+    url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 body {
-    font-family: Arial, Verdana, sans-serif;
+  min-width: 1200px;
+  background: #e5e5e5;
+  font-family: 'Muller', sans-serif;
+}
+
+/* global */
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.flex {
+  display: flex;
 }
 
 .container {
-    display: flex;
-    margin: 0;
-    width: 1170px;    
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
+.section-descr {
+  margin: 0;
+  margin-bottom: 20px;
+  font: 400 40px 'Muller'
+}
+
+.section-margin {
+  margin: 0;
+  margin-bottom: 70px;
+}
+
+/* header */
 .container-header {
-    align-items: center;
-    justify-content: space-between;
+  padding-top: 30px;
 }
 
 .top-header {
-    display: inline-block;        
+  margin: 0;
+  margin-bottom: 30px;
+  align-items: center;
 }
 
-.logo-img
-.item-top-header {
-    display: inline-block;
-    margin: 0;    
-    width: 261px;
-    height: 54px;
-    background-position: left;
-    background-size: contain;
-    background-repeat: no-repeat;
+.logo-header {
+  margin-right: 40px;
 }
 
-.myacc-header-set {
-    display: inline-block;
-    margin: 0;
-    width: 24px;
-    height: 24px;
-
+.header-tel {
+  margin-right: auto;
+  font: 500 20px 'Muller';
 }
 
-.myacc-header-bg {
-    background-image: url("../img/myacc-icon.svg");
+.header-myacc {
+  font: 400 16px 'Muller';
 }
 
+.bot-header {
+  padding: 14px 45px;
+  margin-bottom: 70px;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 15px;
+}
 
+.header-nav-items {
+  margin: 0;
+  margin-right: 45px;
+  font: 400 16px 'Muller';
+}
 
+.header-nav-items:last-child {
+  margin-right: 0;
+}
+
+.header-nav-items-right {
+  margin: 0;
+  font-size: 0;
+}
+
+.btn-header {
+  margin-right: 40px;
+  padding: 13px 20px;
+  border: 1px solid coral;
+  border-radius: 10px;
+  font: 400 16px 'Muller';
+}
+
+.btn-header:last-child {
+  margin-right: 0;
+}
+
+/* main */
+.section-descr {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  font-size: 400 40px 'Muller';
+}
+
+/* sales */
+.high-content {
+  margin-bottom: 51px;
+  justify-content: space-between;
+}
+
+.high-items-size {
+  margin: 0;
+  width: 573px;
+}
+
+.high-content-size {
+  outline: 1px solid coral;
+  min-height: 258px;
+}
+
+.high-offers-descr {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* about */
+.main-about-text {
+  margin: 0;
+  max-width: 75%;
+  font: 400 16px / 200% 'Muller';
+  text-align: justify;
+}
+
+/* services */
+.services-list {
+  flex-flow: row wrap;
+}
+
+.services-list-item {
+  max-width: 50%;
+  justify-content: space-between;
+}
+
+.serv-list-descr {
+  margin: 0;
+  font: 400 16px / 200% 'Muller';
+}
+
+.ref-button {
+  font: 500 20px / 200% 'Muller';
+}
+
+/* advantages */
+.advan-list {
+  flex-flow: row wrap;
+}
+
+.advan-list-item {
+  margin: 0;
+  margin: 0 22px 22px 0;
+  width: 276px;
+  min-height: 276px;
+  justify-content: space-between;
+  border: 1px solid coral;
+  border-radius: 15px;
+}
+
+.advan-list-item:nth-child(4n) {
+  margin: 0 0 22px 0;
+}
+
+.advan-list-item-text {
+  margin: 0;
+  font: 400 16px / 200% 'Muller';
+}
+
+/* placements */
+.place-list {
+  flex-flow: row wrap;
+}
+
+.place-list-item {
+  margin: 0;
+  margin: 0 24px 24px 0;
+  width: 374px;
+  height: 440px;
+}
+
+.place-list-item:nth-child(3n) {
+  margin: 0 0 24px 0;
+}
+
+.place-img-margin {
+  margin-bottom: 32px;
+}
+
+.hotel-descr {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.hotel-descr-item-frst {
+  margin-right: 4px;
+  font: 400 16px 'Muller';
+  color: #999999;
+}
+
+.hotel-descr-item-scnd {
+  margin-right: 4px;
+  font: 700 20px 'Muller';
+}
+
+.hotel-descr-item-thd {
+  margin-right: auto;
+  font: 400 16px 'Muller';
+}
+
+.place-hotel-name {
+  margin: 0;
+  margin-bottom: 16px;
+  font: 400 16px 'Muller';
+}
+
+.place-hotel-country {
+  margin: 0;
+  margin-bottom: 20px;
+  font: 400 16px 'Muller';
+  color: #999;
+}
+
+.button-place {
+  padding: 13px 20px;
+  border: 1px solid coral;
+  border-radius: 10px;
+
+}
