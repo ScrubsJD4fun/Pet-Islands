@@ -476,6 +476,7 @@ body {
 }
 
 .hotel-descr {
+  display: inline-block;
   margin-bottom: 16px;
   padding-left: 45px;
   padding-right: 45px;
@@ -493,7 +494,7 @@ body {
 }
 
 .hotel-descr-item-thd {
-  margin-right: auto;
+  margin-right: 55px;
   font: 400 16px 'Muller';
 }
 
