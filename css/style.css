@@ -142,9 +142,14 @@ body {
   border-radius: 15px;
 }
 
+.list-header-set {
+  flex-wrap: wrap;
+}
+
 .header-nav-items {
   margin: 0;
   margin-right: 45px;
+  max-width: 150px;
   font: 400 16px 'Muller';
   color: #666;
 }
@@ -154,11 +159,14 @@ body {
 }
 
 .header-nav-items-right {
+  display: inline-block;
+  max-width: 35%;
   margin: 0;
   font-size: 0;
 }
 
 .btn-header {
+  display: inline-block;
   margin-right: 40px;
   padding: 13px 20px;
   border: 1px solid #cc9933;
@@ -169,6 +177,7 @@ body {
 
 .btn-header:last-child {
   margin-right: 0;
+  margin-bottom: 0;
 }
 
 /* main */
@@ -196,6 +205,7 @@ body {
 }
 
 .high-content-size:last-child {
+  padding-bottom: 20px;
   margin-bottom: 0;
 }
 
@@ -204,11 +214,12 @@ body {
 }
 
 .high-descr-padd-right {
-  padding: 212px 229px 148px 45px;
+  padding: 212px 170px 148px 45px;
   padding-bottom: 0;
 }
 
 .high-offers-descr {
+  max-width: 95%;
   margin: 0;
   margin-bottom: 15px;
   font: 700 40px 'Muller';
@@ -216,23 +227,28 @@ body {
 }
 
 .high-offers-descr-right {
+  max-width: 95%;
+  margin: 0;
+  margin-bottom: 15px;
   font: 700 60px 'Muller';
+  color: #fff;
 }
 
 .offers-prices-right {
-  width: 160px;
+  max-width: 70%;
   margin: 0;
   margin-bottom: 47px;
   padding-right: 18px;
   font: 400 30px 'Muller';
   color: #fff;
+  word-wrap: break-word;
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 20px 20px;
 }
 
 .offers-prices {
-  width: 125px;
+  max-width: 50%;
   margin: 0;
   margin-bottom: 47px;
   padding-right: 18px;
@@ -244,12 +260,32 @@ body {
 }
 
 .high-ref-button {
-  width: 103px;
+  max-width: 50%;
+  padding-right: 15px;
   font: 400 16px 'Muller';
   color: #F0BF5F;
   background-position: right center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.del-p {
+  text-decoration: line-through;
+	text-decoration-color: white;
+}
+
+.but-block {
+  display: inline-block;
+  min-width: 70%;
+}
+
+.hyphens {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
 .high-bg-chamb {
@@ -262,10 +298,6 @@ body {
 
 .high-bg-islscd {
   background-image: url('../img/high/bg-island2.jpg');
-}
-
-.offers-icon-bg {
-  background-image: url('../img/ruble_line.png');
 }
 
 .offers-button {
@@ -424,7 +456,7 @@ body {
 .place-list-item {
   margin: 0;
   margin: 0 24px 24px 0;
-  width: 374px;
+  max-width: 374px;
   min-height: 440px;
   border: 0 solid transparent;
   border-radius: 15px;
@@ -444,7 +476,6 @@ body {
 }
 
 .hotel-descr {
-  display: flex;
   margin-bottom: 16px;
   padding-left: 45px;
   padding-right: 45px;
@@ -499,6 +530,7 @@ body {
 }
 
 .place-item-more {
+  min-width: 374px;
   margin: 0;
   padding-top: 373px;
   padding-left: 54px;
