@@ -90,6 +90,7 @@ body {
 .section-descr {
   margin: 0;
   margin-bottom: 20px;
+  padding-left: 40px;
   font: 400 40px 'Muller';
   color: #333;
 }
@@ -475,11 +476,13 @@ body {
   margin-bottom: 32px;
 }
 
+.place-content-pad {
+  padding: 0 45px 15px;
+}
+
 .hotel-descr {
   display: inline-block;
   margin-bottom: 16px;
-  padding-left: 45px;
-  padding-right: 45px;
 }
 
 .hotel-descr-item-frst {
@@ -501,25 +504,18 @@ body {
 .place-hotel-name {
   margin: 0;
   margin-bottom: 16px;
-  padding-left: 45px;
-  padding-right: 45px;
   font: 400 16px 'Muller';
 }
 
 .place-hotel-country {
   margin: 0;
   margin-bottom: 20px;
-  padding-left: 45px;
-  padding-right: 45px;
   font: 400 16px 'Muller';
   color: #999;
 }
 
 .place-but-pos {
   margin: 0;
-  padding-left: 45px;
-  padding-right: 45px;
-  padding-bottom: 15px;
 }
 
 .button-place {
@@ -530,19 +526,37 @@ body {
   color: #CC9933;
 }
 
+.more-list-item {
+  margin: 0;
+  margin: 0 24px 24px 0;
+  max-width: 374px;
+  min-height: 440px;
+  border: 0 solid transparent;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.more-pad {
+  display: flex;
+  align-items: flex-end;
+  padding: 27px 53px;
+}
+
+
 .place-item-more {
   min-width: 374px;
   margin: 0;
-  padding-top: 373px;
-  padding-left: 54px;
-
 }
 
 .place-item-more-ref {
   padding-right: 18px;
   font: 500 20px / 200% 'Muller';
   color: #fff;
-  background-size: contain;
+  background-size: 18px 18px;
   background-position: right center;
   background-repeat: no-repeat;
 }
@@ -554,3 +568,4 @@ body {
 .bg-rect-icon {
   background-image: url('../img/placements/Rectangle.svg');
 }
+
