@@ -549,7 +549,7 @@ body {
 
 .place-item-more {
   min-width: 374px;
-  margin: 0;
+  margin-right: 0;
 }
 
 .place-item-more-ref {
