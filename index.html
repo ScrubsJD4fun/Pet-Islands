@@ -395,49 +395,46 @@
           <h2 class="section-descr-form">Хочу тур</h2>
 
           <div class="field-form">
-            <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
-              <div class="form-space flex">
-                <div class="form-left">
-                  <div class="form-left-items form-left-select-size">
-                    <p class="form-item-descr">Город вылета</p>
-                    <select class="form-item-bord" name="City">
-                      <option class="brd-hdn" value="Санкт-Петербург">Санкт-Петербург</option>
-                      <option class="brd-hdn" value="Москва">Москва</option>
-                      <option class="brd-hdn" value="Ростов-На-Дону">Ростов-На-Дону</option>
-                    </select>
-                  </div>
-                  <div class="form-left-items form-left-select-size">
-                    <p class="form-item-descr">Страна</p>
-                    <select class="form-item-bord" name="Country">
-                      <option class="brd-hdn" value="Австралия">Австралия</option>
-                      <option class="brd-hdn" value="Россия">Россия</option>
-                      <option class="brd-hdn" value="Беларусь">Беларусь</option>
-                    </select>
-                  </div>
-                  <div class="form-left-items form-left-input-size">
-                    <p class="form-item-descr">Дата прибытия</p>
-                    <input class="form-item-bord" type="date" name="date">
+            <form class="form-wrap flex" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+              <label class="label-wrap form-left-select-size">
+                <span class="form-item-descr">Город вылета</span>
+                <select class="form-item-bord" name="City">
+                  <option value="Санкт-Петербург">Санкт-Петербург</option>
+                  <option value="Москва">Москва</option>
+                  <option value="Ростов-На-Дону">Ростов-На-Дону</option>
+                </select>
+              </label>
 
-                  </div>
-                  <div class="form-left-items form-left-input-size">
-                    <p class="form-item-descr">Ночей</p>
-                    <input class="form-item-bord-ex" type="number" name="nights" min="1" max="16" placeholder="1">
+              <label class="label-wrap form-left-select-size">
+                <span class="form-item-descr">Страна</span>
+                <select class="form-item-bord" name="Country">
+                  <option value="Австралия">Австралия</option>
+                  <option value="Россия">Россия</option>
+                  <option value="Беларусь">Беларусь</option>
+                </select>
+              </label>
 
-                  </div>
-                  <div class="form-left-items form-left-input-size">
-                    <p class="form-item-descr">Туристы</p>
-                    <input class="form-item-bord-ex" type="number" name="turists" min="1" max="8" placeholder="1"
-                      required>
+              <label class="label-wrap form-left-input-size">
+                <span class="form-item-descr">Дата прибытия</span>
+                <input class="form-item-bord" type="date" name="date">
+              </label>
 
-                  </div>
 
-                </div>
+              <label class="label-wrap form-left-input-size">
+                <span class="form-item-descr">Ночей</span>
+                <input class="form-item-bord-ex" type="number" name="nights" min="1" max="16" placeholder="1">
+              </label>
 
-                <div class="form-right">
-                  <button class="btn-reset btn-form">Найти</button>
-                </div>
 
-              </div>
+              <label class="label-wrap form-left-input-size">
+                <span class="form-item-descr">Туристы</span>
+                <input class="form-item-bord-ex" type="number" name="turists" min="1" max="8" placeholder="1" required>
+              </label>
+
+
+              <label class="label-wrap">
+                <button class="btn-reset btn-form">Найти</button>
+              </label>
 
 
             </form>
@@ -567,3 +564,5 @@
 </body>
 
 </html>
+
+<!-- var a,w=document.createTreeWalker(document,NodeFilter.SHOW_TEXT);while(a=w.nextNode()){if(a.textContent.trim().length)a.textContent='Одиннадцатиклассница пошла посмотреть на достопримечательность, она шла долго, несколько строчек, пока не пришла'} -->
