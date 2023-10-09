@@ -258,14 +258,19 @@ body {
   color: var(--color-white);
 }
 
-.hero__btn--style {
+.hero__btn {
+  margin: 0;
+  padding: 26px 40px 24px;
   border: 0px solid transparent;
-  border-radius: 16px;
   outline: none;
+  border-radius: 16px;
   font: 700 23px 'Montserrat';
   font-style: normal;
-  color: var(--color-white);
   text-align: center;
+}
+
+.hero__btn--style {
+  color: var(--color-white);
   background-color: var(--color-yellow);
   transition: background-color 0.3s ease-in-out;
 }
@@ -313,7 +318,7 @@ body {
   gap: 25px;
 }
 
-.info__block {
+.about__card {
   display: flex;
   align-items: flex-end;
   max-width: 868px;
@@ -326,7 +331,7 @@ body {
   background-position: center center;
 }
 
-.block__items {
+.about__items {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -340,7 +345,7 @@ body {
   background-size: cover;
 }
 
-.block__descr {
+.about__text {
   margin: 0;
   max-width: 433px;
   width: 100%;
@@ -348,32 +353,37 @@ body {
   color: var(--color-white);
 }
 
-.btn__block--style {
+.about__btn {
+  margin: 0;
   padding: 18px 36px;
   border: 3px solid var(--color-yellow);
   border-radius: 16px;
   outline: none;
   font: 700 16px 'Montserrat';
+}
+
+
+.about__btn--style {
   color: var(--color-white);
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-.btn__block--style:focus-visible {
+.about__btn--style:focus-visible {
   background-color: var(--color-yellow);
   border-color: var(--color-yellow);
 }
 
-.btn__block--style:hover {
+.about__btn--style:hover {
   background-color: var(--color-yellow);
   border-color: var(--color-yellow);
 }
 
-.btn__block--style:active {
+.about__btn--style:active {
   background-color: var(--color-active);
   border-color: var(--color-active);
 }
 
-.info__list {
+.about__list {
   display: flex;
   flex-flow: column;
   max-width: 870px;
@@ -381,7 +391,7 @@ body {
   gap: 27px;
 }
 
-.info__items {
+.about__case {
   display: flex;
   justify-content: space-between;
   min-height: 295px;
@@ -391,14 +401,14 @@ body {
   border-radius: 32px;
 }
 
-.info__icon {
+.about__icon {
   max-width: 190px;
   width: 100%;
   max-height: 165px;
   height: 100%;
 }
 
-.info__text {
+.about__case__text {
   display: flex;
   flex-flow: column wrap;
   max-width: 452px;
@@ -406,17 +416,17 @@ body {
   gap: 8px;
 }
 
-.info__title {
+.about__case__title {
   margin: 0;
   font: 700 24px 'Montserrat';
 }
 
-.info__descr {
+.about__case__descr {
   margin: 0;
   font: 400 16px / 32px 'Montserrat';
 }
 
-.block--bg {
+.about__card--bg {
   background-image: url('../img/about/block-bg.png');
 }
 
@@ -455,19 +465,24 @@ body {
   font: 400 16px / 32px 'Montserrat';
 }
 
-.how__btn {
+.how__buttons {
   display: flex;
   align-items: center;
   gap: 32px;
 }
 
-.how__btn--style {
+.how__btn {
+  margin: 0;
   padding: 21px 39px;
-  background-color: var(--color-yellow);
-  font: 700 16px 'Montserrat';
-  color: var(--color-white);
   border: 0 solid transparent;
   outline: none;
+  border-radius: 16px;
+  font: 700 16px 'Montserrat';
+}
+
+.how__btn--style {
+  background-color: var(--color-yellow);
+  color: var(--color-white);
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -483,27 +498,33 @@ body {
   background-color: var(--color-active);
 }
 
-.how__btn--size {
+.how__ref {
+  margin: 0;
   padding: 20px 36px;
-  font: 400 16px 'Montserrat';
   border: 1px solid var(--color-gray);
+  border-radius: 16px;
   outline: none;
+  font: 400 16px 'Montserrat';
+}
+
+.how__ref--size {
+  border: 1px solid var(--color-gray);
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-.how__btn--size:focus-visible {
+.how__ref--size:focus-visible {
   color: var(--color-white);
   background-color: var(--color-hover-gray);
   border-color: transparent;
 }
 
-.how__btn--size:hover {
+.how__ref--size:hover {
   color: var(--color-white);
   background-color: var(--color-hover-gray);
   border-color: transparent;
 }
 
-.how__btn--size:active {
+.how__ref--size:active {
   color: var(--color-white);
   background-color: var(--color-dark);
   border-color: transparent;
@@ -574,17 +595,21 @@ body {
   width: 100%;
 }
 
-.footer_logo--offset {
+.footer__menu--offset {
   margin-bottom: 16px;
 }
 
-.menu__list {
+.footer__menu_item {
+  margin: 0;
+}
+
+.footer__menu__list {
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
 }
 
-.menu__list--offset {
+.footer__menu__list--offset {
   margin-bottom: 90px;
 }
 
@@ -594,23 +619,23 @@ body {
   gap: 25px;
 }
 
-.menu__link {
+.footer__menu__link {
   margin: 0;
   font: 600 18px / 36px 'Montserrat';
   color: var(--color-gray);
   transition: color 0.3s ease-in-out;
 }
 
-.menu__link:focus-visible {
+.footer__menu__link:focus-visible {
   outline-offset: 5px;
   outline: 2px solid var(--color-yellow);
 }
 
-.menu__link:hover {
+.footer__menu__link:hover {
   color: var(--color-yellow);
 }
 
-.menu__link:active {
+.footer__menu__link:active {
   color: var(--color-active);
 }
 
