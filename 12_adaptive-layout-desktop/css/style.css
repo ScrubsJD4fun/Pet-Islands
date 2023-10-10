@@ -595,11 +595,11 @@ body {
   width: 100%;
 }
 
-.footer__menu--offset {
+.footer-svg {
   margin-bottom: 16px;
 }
 
-.footer__menu_item {
+.footer__menu__item {
   margin: 0;
 }
 
@@ -613,7 +613,7 @@ body {
   margin-bottom: 90px;
 }
 
-.menu_social {
+.footer__menu__social {
   display: flex;
   align-items: center;
   gap: 25px;
@@ -639,25 +639,25 @@ body {
   color: var(--color-active);
 }
 
-.social__item {
+.footer__social__item {
   outline: none;
 }
 
-.social__item:focus-visible .social__link {
+.footer__social__item:focus-visible .social__link {
   outline-offset: 5px;
   outline: 2px solid var(--color-yellow);
 }
 
-.social__link {
+.footer__social__link {
   fill: var(--color-hover-gray);
   transition: fill 0.3s ease-in-out;
 }
 
-.social__link:hover {
+.footer__social__link:hover {
   fill: var(--color-yellow);
 }
 
-.social__link:active {
+.footer__social__link:active {
   fill: var(--color-active);
 }
 
@@ -673,25 +673,25 @@ body {
   width: 100%;
 }
 
-.form__title {
+.footer__form__title {
   margin: 0;
   margin-bottom: 25px;
   font: 400 48px 'Montserrat';
   color: var(--color-gray);
 }
 
-.form__field {
+.footer__form__field {
   margin: 0;
   margin-bottom: 25px;
   max-width: inherit;
   width: inherit;
 }
 
-.form__field--resize {
+.footer__form__field--resize {
   margin-bottom: 28px;
 }
 
-.form__fio {
+.footer__form__fio {
   padding: 14px 24px;
   max-width: inherit;
   width: inherit;
@@ -705,7 +705,7 @@ body {
   background-color: var(--color-dark-gray);
 }
 
-.form__mail {
+.footer__form__mail {
   padding: 14px 24px;
   max-width: inherit;
   width: inherit;
@@ -719,7 +719,7 @@ body {
   background-color: var(--color-dark-gray);
 }
 
-.form__message {
+.footer__form__message {
   padding: 14px 24px;
   max-width: inherit;
   width: inherit;
@@ -733,81 +733,85 @@ body {
   background-color: var(--color-dark-gray);
 }
 
-.form__message::-webkit-scrollbar {
+.footer__form__message::-webkit-scrollbar {
   width: 0px;
   height: 0px;
 }
 
-.form__ph--color::placeholder {
+.footer__form__ph::placeholder {
   font: 400 16px / 32px 'Montserrat';
   color: var(--color-gray);
 }
 
-.input--color {
+.input-color {
   background-color: var(--color-dark-gray);
   transition: background-color 0.3s ease-in-out;
 }
 
-.input--color:focus-visible {
+.input-color:focus-visible {
   background-color: var(--color-hover-gray);
 }
 
-.input--color:hover {
+.input-color:hover {
   background-color: var(--color-hover-gray);
 }
 
-.input--color:active {
+.input-color:active {
   background-color: var(--color-hover-gray);
 }
 
-.form__block {
+.footer__form__block {
   display: flex;
   justify-content: space-between;
   max-width: inherit;
   width: inherit;
 }
 
-.form__btn--style {
+.footer__btn {
+  margin: 0;
   padding: 19px 53px;
+  border: 0 solid transparent;
+  border-radius: 16px;
   font: 700 16px 'Montserrat';
   color: var(--color-white);
-  border: 0 solid transparent;
   outline: none;
+}
+
+.footer__btn--style {
   background-color: var(--color-yellow);
   transition: background-color 0.3s ease-in-out;
 }
 
-.form__btn--style:focus-visible {
+.footer__btn--style:focus-visible {
   background-color: var(--color-hover);
 }
 
-.form__btn--style:hover {
+.footer__btn--style:hover {
   background-color: var(--color-hover);
 }
 
-.form__btn--style:active {
+.footer__btn--style:active {
   background-color: var(--color-active);
 }
 
-.form__check {
+.footer__form__check {
   position: relative;
   display: flex;
   align-items: center;
   padding-left: 1.2em;
 }
 
-.check--style {
+.check-style {
   width: 14px;
   height: 14px;
   border: 1px solid var(--color-gray);
-
 }
 
-.check--style:checked+.custom-checkbox {
+.check-style:checked+.custom-checkbox {
   background-image: url('../img/check-arrow.svg');
 }
 
-.check__descr {
+.footer__check__descr {
   margin: 0;
   font: 400 16px / 32px 'Montserrat';
   color: var(--color-gray);
