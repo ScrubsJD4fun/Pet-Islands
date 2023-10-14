@@ -252,7 +252,7 @@ body {
 
 .hero__descr {
   margin: 0;
-  margin-bottom: 87px;
+  margin-bottom: 91px;
   max-width: 50%;
   font: 700 24px 'Montserrat';
   color: var(--color-white);
@@ -314,7 +314,6 @@ body {
 .about__info {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 25px;
 }
 
@@ -388,15 +387,14 @@ body {
   flex-flow: column;
   max-width: 870px;
   width: 100%;
-  gap: 27px;
+  gap: 25px;
 }
 
 .about__case {
   display: flex;
-  justify-content: space-between;
   min-height: 295px;
   gap: 50px;
-  padding: 63px 114px 65px 60px;
+  padding: 65px 113px 64px 59px;
   border: 1px solid var(--color-gray);
   border-radius: 32px;
 }
@@ -444,6 +442,7 @@ body {
 .how__info {
   display: flex;
   justify-content: space-between;
+  gap: 50px
 }
 
 .how__block {
@@ -531,15 +530,18 @@ body {
 }
 
 .how__bg {
-  padding-top: 10px;
+  padding-top: 6px;
   max-width: 869px;
   width: 100%;
   min-height: 470px;
+  object-fit: cover;
+  border-radius: 32px;
+  overflow: hidden;
 }
 
 /* questions */
 .questions--offset {
-  margin-bottom: 100px;
+  margin-bottom: 95px;
 }
 
 .questions__title {
@@ -556,7 +558,7 @@ body {
 
 .questions__item {
   margin: 0;
-  padding: 61px 58px;
+  padding: 64px 58px;
   max-width: 569px;
   width: 100%;
   min-height: 292px;
@@ -665,6 +667,7 @@ body {
 
 /* form */
 .footer__form {
+  position: relative;
   display: flex;
   align-items: flex-start;
   flex-flow: column;

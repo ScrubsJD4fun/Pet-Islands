@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <link rel="icon" type="images/x-icon" href="img/favicon/favicon.ico">
   <title>Евклид</title>
 </head>
@@ -16,7 +17,8 @@
   <header class="header section-margin">
     <div class="container header__container">
       <a href="#" class="logo">
-        <svg width="226" height="72" viewBox="0 0 226 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="header-logo" width="226" height="72" viewBox="0 0 226 72" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <path
             d="M70.5385 36.2906C69.4378 36.9225 68.1026 37.4219 66.533 37.7888C64.9634 38.1558 63.3326 38.3392 61.6407 38.3392C59.3576 38.3392 57.4109 38.064 55.8006 37.5137C54.2106 36.9633 53.0079 36.1989 52.1925 35.2204C51.3975 34.2419 51 33.1106 51 31.8264C51 30.7052 51.3058 29.7166 51.9173 28.8604C52.5288 28.0043 53.3748 27.3418 54.4552 26.8729C53.6194 26.4449 52.9773 25.8537 52.5288 25.0995C52.1008 24.3249 51.8867 23.4789 51.8867 22.5616C51.8867 21.3793 52.2536 20.2989 52.9875 19.3205C53.7417 18.342 54.8832 17.5572 56.4121 16.9661C57.9409 16.3749 59.8265 16.0793 62.0688 16.0793C63.4753 16.0793 64.8615 16.2118 66.2272 16.4768C67.593 16.7418 68.7957 17.0986 69.8353 17.547L68.1841 22.0724C66.2884 21.2366 64.3315 20.8187 62.3134 20.8187C60.8661 20.8187 59.7857 21.0124 59.0723 21.3997C58.3588 21.7666 58.0021 22.2864 58.0021 22.9591C58.0021 24.1822 58.8888 24.7937 60.6623 24.7937H66.7165V29.4108H60.2648C59.2251 29.4108 58.4403 29.5841 57.9103 29.9306C57.3804 30.2568 57.1154 30.746 57.1154 31.3983C57.1154 32.0914 57.5027 32.6316 58.2773 33.0189C59.0519 33.4062 60.2546 33.5998 61.8853 33.5998C63.0472 33.5998 64.2397 33.4469 65.4628 33.1412C66.7063 32.815 67.7866 32.3768 68.7039 31.8264L70.5385 36.2906Z"
             fill="black" />
@@ -125,7 +127,7 @@
   <main>
 
     <section class="hero hero--offset">
-      <div class="container">
+      <div class="container hero__container">
         <div class="hero__block hero__block--bg">
           <h1 class="hero__title">Проектные решения любой сложности</h1>
           <p class="hero__descr">Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей
@@ -138,15 +140,15 @@
     </section>
 
     <section class="about about--offset">
-      <div class="container">
+      <div class="container about--container">
         <h2 class="about__title">О нас</h2>
         <p class="about__descr">Также как перспективное планирование создаёт необходимость включения
           в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов,
           поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А&nbsp;также диаграммы связей могут быть описаны
           максимально подробно. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов
-          требует от&nbsp;нас анализа <br />как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений!
-          Следует
-          отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций,
+          требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений!
+          Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность
+          позиций,
           занимаемых участниками в&nbsp;отношении поставленных задач. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что
           высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
         <div class="about__info">
@@ -215,7 +217,7 @@
     </section>
 
     <section class="how how--offset">
-      <div class="container">
+      <div class="container how--container">
         <h2 class="how__title">Этапы</h2>
         <div class="how__info">
           <div class="how__block">
@@ -242,12 +244,12 @@
     </section>
 
     <section class="questions questions--offset">
-      <div class="container">
+      <div class="container questions--container">
         <h2 class="questions__title">Вопросы</h2>
         <ul class="list-reset questions__list">
           <li class="questions__item">
             <h3 class="questions__title questions__title--style">Из&nbsp;чего формируется
-              <br />конечная стоимость проекта?
+              конечная стоимость проекта?
             </h3>
             <p class="questions__descr">Приятно, граждане, наблюдать, как некоторые особенности внутренней политики
               могут быть призваны к&nbsp;ответу.</p>
@@ -274,8 +276,8 @@
   <footer class="footer footer--offset">
     <div class="container footer__container">
       <div class="footer__menu">
-        <nav class="nav">
-          <a href="#">
+        <nav class="nav footer-nav">
+          <a class="footer-ref" href="#">
             <svg class="footer-svg" width="226" height="72" viewBox="0 0 226 72" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
