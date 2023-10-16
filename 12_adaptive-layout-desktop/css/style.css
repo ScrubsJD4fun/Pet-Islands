@@ -641,9 +641,9 @@ body {
   color: var(--color-active);
 }
 
-.footer__social__item {
+/* .footer__social__item {
   outline: none;
-}
+} */
 
 .footer__social__item:focus-visible .social__link {
   outline-offset: 5px;
@@ -829,6 +829,16 @@ body {
   border: 1px solid var(--color-gray);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.check-style:focus + .custom-checkbox {
+  outline-offset: 5px;
+  outline: 2px solid var(--color-yellow);
+}
+
+.check-style:hover + .custom-checkbox {
+  outline-offset: 5px;
+  outline: 2px solid var(--color-yellow);
 }
 
 /* text */
