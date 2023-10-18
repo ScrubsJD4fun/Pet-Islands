@@ -768,6 +768,7 @@ body {
   justify-content: space-between;
   max-width: inherit;
   width: inherit;
+  gap: 10px;
 }
 
 .footer__btn {
