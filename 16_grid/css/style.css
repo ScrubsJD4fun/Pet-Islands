@@ -150,7 +150,7 @@ body {
 }
 
 /* advantages */
-.container__advant {
+.advant__container {
   padding: 80px 0;
 }
 
@@ -326,7 +326,7 @@ body {
   padding: 0;
 }
 
-.footer_skillbox {
+.footer__skillbox {
   margin: 0 auto;
   padding-top: 3px;
   text-align: center;

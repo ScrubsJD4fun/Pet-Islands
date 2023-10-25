@@ -21,7 +21,7 @@
   }
 
   /* advant */
-  .container__advant {
+  .advant__container {
     padding-bottom: 73px;
   }
 
@@ -107,7 +107,7 @@
     padding: 77px 0 135px;
   }
 
-  .container__advant {
+  .advant__container {
     padding-top: 57px;
     padding-bottom: 55px;
   }
@@ -211,13 +211,14 @@
     font: 400 16px / 130% "Roboto";
   }
 
-  .header__btn {
-    padding: 20.5px 53.5px;
-    font: 700 16px "Roboto";
-  }
+
+.hero__btn {
+  padding: 20.5px 53.5px;
+  font-size: 16px;
+}
 
   /* advant */
-  .container__advant {
+  .advant__container {
     padding: 50px 0;
   }
 
